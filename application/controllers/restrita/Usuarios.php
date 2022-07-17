@@ -247,7 +247,7 @@
 
 
 
-                	if ($this->image_lib->resize()) {
+                	if (!$this->image_lib->resize()) {
 
                     	$data['erro'] = 3;
                 		$data['mensagem'] = $this->image_lib->display_errors('<span class="text-danger">', '</span>');

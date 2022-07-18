@@ -211,7 +211,7 @@
 
 		 		$config['upload_path']= './uploads/usuarios/';
                 $config['allowed_types']= '|jpg|png|JPG|PNG|jpeg|JPEG';
-//                $config['encrypt_name']= true;
+	            $config['encrypt_name']= true;
                 $config['max_size']= 1048;
                 $config['max_width']=500;
                 $config['max_height']=500;
@@ -243,7 +243,7 @@
                 	$config['width']=280;
 
 
-                	$this -> load -> library ( 'image_lib', $config );
+                	$this ->load->library ( 'image_lib', $config );
 
 
 

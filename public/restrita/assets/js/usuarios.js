@@ -117,15 +117,17 @@ var App_usuarios = function(){
 
 				if(response.erro === 0){
 
+					alert('Foi carregado')
 
-					$('#box-foto-usuario').html("<input type='hidden' name='user_foto' value='"+ response.user_foto +"'> <img width='100' alt='Imagem do usuário' src='"+ BASE_URL + "uploads/usuarios/small/"+ response.user_foto + "' class='rounded-circle'>");
+					//$('#box-foto-usuario').html("<input type='hidden' name='user_foto' value='"+ response.user_foto +"'> <img width='100' alt='Imagem do usuário' src='"+ BASE_URL + "uploads/usuarios/small/"+ response.user_foto + "' class='rounded-circle'>");
 				
 
 				}else{
+
+					alert('Nao Foi carregado')
 					
 
-					$('#user_foto').html('response.mensagem');
-
+					//$('#user_foto').html('response.mensagem');
 					
 				}
 
